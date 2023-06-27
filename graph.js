@@ -195,12 +195,13 @@ var data2 = {
   
   var layout2 = {
     title: "Energy forecast for 2050<br>Source: Department of Energy & Climate Change, Tom Counsell via <a href='https://bost.ocks.org/mike/sankey/'>Mike Bostock</a>",
-    width: 1118,
+    width: 1400,
     height: 772,
     font: {
       size: 10
     }
   }
 
-  const config = {responsive: true}
+  const config = {responsive: true,
+    scrollZoom: true}
   Plotly.newPlot('sankey2', data2, layout2, config)
