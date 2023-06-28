@@ -15,7 +15,7 @@
     
     /* Set gray background color and 100% height */
     .sidenav {
-      padding-top: 20px;
+      padding-top: 30px;
       position: fixed;
       z-index: 1;
       background-color: #f1f1f1;
@@ -23,6 +23,8 @@
       width: 140px;
       top: 0;
       left: 0;
+      align-items: center;
+      text-align: center;
     }
     
     /* Set black background color, white text and some padding */
@@ -40,18 +42,11 @@
     .content{
         position: relative;
         top:40px;
-        left:140px;
+        left:80px;
     }
     .body{
         height: 100%;
         display: flex;
         flex-direction: column;
     }
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
+   

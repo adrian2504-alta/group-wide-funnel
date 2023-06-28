@@ -31,8 +31,8 @@ var data = {
 var data = [data]
 
 var layout = {
-  title: "Energy forecast for 2050<br>Source: Department of Energy & Climate Change, Tom Counsell via <a href='https://bost.ocks.org/mike/sankey/'>Mike Bostock</a>",
-  width: 1118,
+  title: "Test graph with realtime data",
+  width: 1000,
   height: 772,
   font: {
     size: 10
@@ -194,8 +194,8 @@ var data2 = {
   var data2 = [data2]
   
   var layout2 = {
-    title: "Energy forecast for 2050<br>Source: Department of Energy & Climate Change, Tom Counsell via <a href='https://bost.ocks.org/mike/sankey/'>Mike Bostock</a>",
-    width: 1400,
+    title: "Group Wide Funnel",
+    width: 1000,
     height: 772,
     font: {
       size: 10
@@ -204,4 +204,4 @@ var data2 = {
 
   const config = {responsive: true,
     scrollZoom: true}
-  Plotly.newPlot('sankey2', data2, layout2, config)
+  Plotly.newPlot('sankey2', data2, layout2, config, {scrollZoom: true})
